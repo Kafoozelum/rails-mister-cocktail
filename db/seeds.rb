@@ -14,27 +14,16 @@
 #   f.each_line {|line| p line}
 # }
 
+Dose.delete_all
+Ingredient.delete_all
+Cocktail.delete_all
+
+
 Ingredient.create(name: "IngredientOne")
 Ingredient.create(name: "IngredientTwo")
 Ingredient.create(name: "IngredientThree")
 
-Dose.create(description: "DoseOne")
-Dose.create(description: "DoseTwo")
-Dose.create(description: "DoseThree")
 
 
-Cocktail.delete_all
 
-Cocktail.create!(
-  [
-    {
-      name: "CocktailOne"
-    },
-    {
-      name: "CocktailTwo"
-    },
-    {
-      name: "CocktailThree"
-    },
-  ]
-)
+
